@@ -1,0 +1,13 @@
+---
+- name: "Play-1"
+  hosts: balancers 
+  become: true
+  roles:
+    - balancer
+
+- name: "Play-2"
+  hosts: webservers 
+  become: true
+  roles:
+    - phphello
+

@@ -60,7 +60,9 @@ defaults
 #---------------------------------------------------------------------
 # main frontend which proxys to the backends
 #---------------------------------------------------------------------
-frontend  main *:80
+frontend  main 
+listen node5
+bind *:80
     acl url_static       path_beg       -i /static /images /javascript /stylesheets
     acl url_static       path_end       -i .jpg .gif .png .css .js
 
@@ -79,8 +81,7 @@ backend static
 #---------------------------------------------------------------------
 backend app
     balance     roundrobin
-{% for item in groups['webservers'] %}
-    
-    server {{hostvars[item]['inventory_hostname']}} {{ hostvars[item]['ansible_ip'] }}:80 check
 
-{% endfor %}
+    server	node3.example.com   172.31.41.114:80   check 
+    server	node4.example.com   172.31.33.88:80   check 
+

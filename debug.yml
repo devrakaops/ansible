@@ -1,0 +1,8 @@
+---
+- name: "using debug"
+  hosts: webservers
+  become: true
+  tasks:
+    - name: "sss"
+      debug:
+        var: hostvars 
