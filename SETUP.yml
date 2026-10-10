@@ -1,10 +1,17 @@
 node1 | SUCCESS => {
     "ansible_facts": {
         "ansible_all_ipv4_addresses": [
+<<<<<<< HEAD
             "172.31.42.77"
         ],
         "ansible_all_ipv6_addresses": [
             "fe80::cff:eeff:feba:6cd5"
+=======
+            "172.31.47.247"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::cff:d0ff:fe77:1d6b"
+>>>>>>> a26b7f2 (Day-1)
         ],
         "ansible_apparmor": {
             "status": "disabled"
@@ -33,6 +40,7 @@ node1 | SUCCESS => {
         "ansible_date_time": {
             "date": "2026-10-10",
             "day": "10",
+<<<<<<< HEAD
             "epoch": "1791620980",
             "epoch_int": "1791620980",
             "hour": "08",
@@ -44,6 +52,19 @@ node1 | SUCCESS => {
             "month": "10",
             "second": "40",
             "time": "08:29:40",
+=======
+            "epoch": "1791628714",
+            "epoch_int": "1791628714",
+            "hour": "10",
+            "iso8601": "2026-10-10T10:38:34Z",
+            "iso8601_basic": "20261010T103834099244",
+            "iso8601_basic_short": "20261010T103834",
+            "iso8601_micro": "2026-10-10T10:38:34.099244Z",
+            "minute": "38",
+            "month": "10",
+            "second": "34",
+            "time": "10:38:34",
+>>>>>>> a26b7f2 (Day-1)
             "tz": "UTC",
             "tz_dst": "UTC",
             "tz_offset": "+0000",
@@ -53,12 +74,20 @@ node1 | SUCCESS => {
             "year": "2026"
         },
         "ansible_default_ipv4": {
+<<<<<<< HEAD
             "address": "172.31.42.77",
+=======
+            "address": "172.31.47.247",
+>>>>>>> a26b7f2 (Day-1)
             "alias": "eth0",
             "broadcast": "172.31.47.255",
             "gateway": "172.31.32.1",
             "interface": "eth0",
+<<<<<<< HEAD
             "macaddress": "0e:ff:ee:ba:6c:d5",
+=======
+            "macaddress": "0e:ff:d0:77:1d:6b",
+>>>>>>> a26b7f2 (Day-1)
             "mtu": 9001,
             "netmask": "255.255.240.0",
             "network": "172.31.32.0",
@@ -215,7 +244,11 @@ node1 | SUCCESS => {
             "PWD": "/home/ec2-user",
             "SHELL": "/bin/bash",
             "SHLVL": "0",
+<<<<<<< HEAD
             "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-ktsjllzslpnbtfphlsgjjbuwscnsaodw ; /usr/bin/python3 /home/ec2-user/.ansible/tmp/ansible-tmp-1791620979.3285317-19560-73075462127147/AnsiballZ_setup.py",
+=======
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-nqetrokturflfvltrwgkemagdoafhhoy ; /usr/bin/python3 /home/ec2-user/.ansible/tmp/ansible-tmp-1791628713.3380473-19187-121115257468950/AnsiballZ_setup.py",
+>>>>>>> a26b7f2 (Day-1)
             "SUDO_GID": "1000",
             "SUDO_HOME": "/home/ec2-user",
             "SUDO_TTY": "/dev/pts/0",
@@ -294,7 +327,11 @@ node1 | SUCCESS => {
             },
             "hw_timestamp_filters": [],
             "ipv4": {
+<<<<<<< HEAD
                 "address": "172.31.42.77",
+=======
+                "address": "172.31.47.247",
+>>>>>>> a26b7f2 (Day-1)
                 "broadcast": "172.31.47.255",
                 "netmask": "255.255.240.0",
                 "network": "172.31.32.0",
@@ -302,12 +339,20 @@ node1 | SUCCESS => {
             },
             "ipv6": [
                 {
+<<<<<<< HEAD
                     "address": "fe80::cff:eeff:feba:6cd5",
+=======
+                    "address": "fe80::cff:d0ff:fe77:1d6b",
+>>>>>>> a26b7f2 (Day-1)
                     "prefix": "64",
                     "scope": "link"
                 }
             ],
+<<<<<<< HEAD
             "macaddress": "0e:ff:ee:ba:6c:d5",
+=======
+            "macaddress": "0e:ff:d0:77:1d:6b",
+>>>>>>> a26b7f2 (Day-1)
             "module": "xen_netfront",
             "mtu": 9001,
             "pciid": "vif-0",
@@ -318,8 +363,13 @@ node1 | SUCCESS => {
         "ansible_fibre_channel_wwn": [],
         "ansible_fips": false,
         "ansible_form_factor": "Other",
+<<<<<<< HEAD
         "ansible_fqdn": "ip-172-31-42-77.ec2.internal",
         "ansible_hostname": "ip-172-31-42-77",
+=======
+        "ansible_fqdn": "ip-172-31-47-247.ec2.internal",
+        "ansible_hostname": "ip-172-31-47-247",
+>>>>>>> a26b7f2 (Day-1)
         "ansible_hostnqn": "",
         "ansible_interfaces": [
             "eth0",
@@ -425,6 +475,7 @@ node1 | SUCCESS => {
         "ansible_lsb": {},
         "ansible_lvm": "N/A",
         "ansible_machine": "x86_64",
+<<<<<<< HEAD
         "ansible_machine_id": "526cc78b55744dd58f3faca3e879cdce",
         "ansible_memfree_mb": 806,
         "ansible_memory_mb": {
@@ -436,6 +487,19 @@ node1 | SUCCESS => {
                 "free": 806,
                 "total": 1704,
                 "used": 898
+=======
+        "ansible_machine_id": "c4a845cccc40421c9a318f328f0954b7",
+        "ansible_memfree_mb": 274,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 569,
+                "used": 192
+            },
+            "real": {
+                "free": 274,
+                "total": 761,
+                "used": 487
+>>>>>>> a26b7f2 (Day-1)
             },
             "swap": {
                 "cached": 0,
@@ -444,6 +508,7 @@ node1 | SUCCESS => {
                 "used": 0
             }
         },
+<<<<<<< HEAD
         "ansible_memtotal_mb": 1704,
         "ansible_mounts": [
             {
@@ -459,6 +524,23 @@ node1 | SUCCESS => {
                 "mount": "/",
                 "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
                 "size_available": 7036497920,
+=======
+        "ansible_memtotal_mb": 761,
+        "ansible_mounts": [
+            {
+                "block_available": 1715227,
+                "block_size": 4096,
+                "block_total": 2291195,
+                "block_used": 575968,
+                "device": "/dev/xvda4",
+                "fstype": "xfs",
+                "inode_available": 4571733,
+                "inode_total": 4615104,
+                "inode_used": 43371,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                "size_available": 7025569792,
+>>>>>>> a26b7f2 (Day-1)
                 "size_total": 9384734720,
                 "uuid": "ada6e840-6db2-419b-bf6d-20e02abbdd44"
             },
@@ -495,7 +577,11 @@ node1 | SUCCESS => {
                 "uuid": "7162-5300"
             }
         ],
+<<<<<<< HEAD
         "ansible_nodename": "ip-172-31-42-77.ec2.internal",
+=======
+        "ansible_nodename": "ip-172-31-47-247.ec2.internal",
+>>>>>>> a26b7f2 (Day-1)
         "ansible_os_family": "RedHat",
         "ansible_pkg_mgr": "dnf",
         "ansible_proc_cmdline": {
@@ -520,8 +606,13 @@ node1 | SUCCESS => {
         "ansible_processor_threads_per_core": 1,
         "ansible_processor_vcpus": 1,
         "ansible_product_name": "HVM domU",
+<<<<<<< HEAD
         "ansible_product_serial": "ec2fabdf-abdd-cd63-f93f-7107d1bb5553",
         "ansible_product_uuid": "ec2fabdf-abdd-cd63-f93f-7107d1bb5553",
+=======
+        "ansible_product_serial": "ec2c82f9-6da7-ccf4-e352-da4e4790cd06",
+        "ansible_product_uuid": "ec2c82f9-6da7-ccf4-e352-da4e4790cd06",
+>>>>>>> a26b7f2 (Day-1)
         "ansible_product_version": "4.11.amazon",
         "ansible_python": {
             "executable": "/usr/bin/python3",
@@ -554,11 +645,19 @@ node1 | SUCCESS => {
         },
         "ansible_selinux_python_present": true,
         "ansible_service_mgr": "systemd",
+<<<<<<< HEAD
         "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAX9S3iFRj+S4M79if/ZmeEuz33iA0zbZZ/Kzg0e6WAuaEKW4OVe5QVIWgdlab8VAIM9JZSnQI+KigX8zVAAMWc=",
         "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
         "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAILiAO/FNB/WOzrrRuoP8TcqXk8IC5lWMOZiABgk2VzHE",
         "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
         "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQCsVMazDutJD11hPG9ZEMdctOVzmrJy3MZu03r4BtHbvNpbEv/eyEm/h/cc+cX47ZQ6JvhcaGjOMm5PMR5oOUvXv+iPrq6ONmDvJkXh5/zReLVzuoB8ailbnMRirhKsdC4GNdcMNrvPqG4YVAJFjDg5hWwT+jvZVW0p5y8N1Ex9edgYMY60uDQ166nL8WTMca65iCdM4ZQXJXcoZx5TI4zgcTAmSOeRiM0F5c5ZRzvKAU6AId1Vrc4puxF1tQaGpsD+PMwT2ei9pmgBNq3R0BtUklDsFwFs/h0+Qlgi4ODfu98KGFSeAw4/i+n92J/QhspoXLimIKdf4L1NTxY39LxqhmdZd6/vulZP7Bl0uklwb2GtEWozZG4mzf0S2SfwTwP1CqxmLMSMPD/g1GFGphHdCr7Kq8YEDRk/ekaKSQwsrfk+3HafelV/YiZ+5yuMIPDm7GehZ/M0XkWXf+yci+Z73koq+0rTNhI1YjIZQr13auO8aUP51I4/3xNPWFMdmdU=",
+=======
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC9zgPBZUmBSfXr+w5Mjoof+cbbSNWZnyh2Kp3O971yFkUA8lRIaoD7Jh2oPCRGwHAYr1AMZ79avTyXNV4lOS4k=",
+        "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIEDzO3mJfvTYx6TtM9H53CCBnnPba/n5gyOpgnO75X19",
+        "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQCjM3I8umlTBbQeTlvbRRQWOK2tJh7I3nE/5zbsv0qDDdYorEgrlT5goKL5LcgZjr/Gl/w1u4UnKX7HxtdITkmSMl4bOpXLbZaVzreQ6puCP3MvfzSSYketKrR9QF9YX4TyF7/4VvRRsVo9Qd5UkOlicsF/Mvcvz6gTiy/Piv5VkRxV3Xd9kQgOnBRs33frFAklKB5svQDms2OyYMUZ0T0ZDEcOUQ1NsAvGZ/Et3rhicXtujZQN+zBBL8PTp8bs60W2nSMpD6ATMjM8AdURXJzHDDM77K1o3yP77HxKJ/GK8iPs0TbmFn3W7yfjv2Ngu6VW5ThgIgVxZzblL57MY46N76+3mziZUs7Olsn+R7eoNYA7Uyy68/ODIpkWFINV0SoUKasENpcGmnF/QO7qfiWHBKo3MozxPTpAn6twA2ueQrsgFnAOLpc8eprm8IETTg8wp/kdaCTyfIwlNakyDOJ9nQ5GL+jJXrft9/HZCq6wmMmxlCK95aT+oKQjy1QTBec=",
+>>>>>>> a26b7f2 (Day-1)
         "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
         "ansible_swapfree_mb": 0,
         "ansible_swaptotal_mb": 0,
@@ -566,7 +665,11 @@ node1 | SUCCESS => {
         "ansible_system_capabilities": [],
         "ansible_system_capabilities_enforced": "False",
         "ansible_system_vendor": "Xen",
+<<<<<<< HEAD
         "ansible_uptime_seconds": 4288,
+=======
+        "ansible_uptime_seconds": 3041,
+>>>>>>> a26b7f2 (Day-1)
         "ansible_user_dir": "/root",
         "ansible_user_gecos": "root",
         "ansible_user_gid": 0,

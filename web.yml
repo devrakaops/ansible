@@ -1,0 +1,31 @@
+---
+- name: "Play-1:"
+  hosts: dev
+  become: true
+  tasks:
+    - name: "Task-1: Create a directory with requirements"
+      file:
+        path: /webdev
+        state: directory
+        group: apache
+        mode: '2775'
+
+    - name: "Task-2: Create a link"
+      file:
+        src: /webdev
+        dest: /var/www/html/webdev
+        state: link
+        setype: 'httpd_sys_content_t'
+
+    - name: "Task-3: Create a file index.html in /webdev/"
+      file:
+        path: /webdev/index.html
+        state: touch
+        setype: 'httpd_sys_content_t'
+
+    - name: "Task-4: Add a line as content"
+      lineinfile:
+        line: "Development"
+        path: /webdev/index.html
+
+

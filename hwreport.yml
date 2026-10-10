@@ -1,0 +1,30 @@
+---
+- name: "Play1"
+  hosts: all
+  become: true
+  tasks:
+    - name: "Get download the jinja file on all MH at /root/hwreport.txt"
+      get_url:
+        url: https://github.com/devrakaops/ansible-materials/raw/refs/heads/master/hwreport.empty
+        dest: /root/hwreport.txt
+
+    - name: "Task-2: change the value"
+      ansible.builtin.replace:
+        path: /root/hwreport.txt
+        regexp: INVENTORY_HOSTNAME=
+        replace:  INVENTORY_HOSTNAME= {{ ansible_hostname | default('NONE')}}
+
+
+    - name: "Task-3: change the value"
+      ansible.builtin.replace:
+        path: /root/hwreport.txt
+        regexp: VDA_SIZE=
+        replace: VDA_SIZE= {{ ansible_devices.xvda.size | default('NONE')}}
+
+
+    - name: "Task-3: change the value"
+      ansible.builtin.replace:
+        path: /root/hwreport.txt
+        regexp: VDB_SIZE=
+        replace: VDB_SIZE= {{ ansible_devices.vdb.size | default('NONE')}}
+

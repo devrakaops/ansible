@@ -1,0 +1,19 @@
+---
+- name: "Play1"
+  hosts: all
+  become: true
+  tasks:
+    - name: "Task-1: MOve the jinja to MH"
+      template:
+        src: /home/ec2-user/ansible/hosts.j2
+        dest: /etc/myhosts
+
+- name: "Play2"
+  hosts: all,!dev
+  become: true
+  tasks:
+    - name: "Task-1: Delete the jinja to MH"
+      file:
+        path: /etc/myhosts
+        state: absent
+
