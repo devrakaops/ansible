@@ -1,0 +1,24 @@
+---
+- name: "Task-1: INstall httpd webserver apache"
+  yum:
+    name: httpd 
+    state: present
+
+- name: "Task-2: service enabled and started"
+  service:
+    name: httpd.service 
+    enabled: true
+    state: restarted
+
+- name: "permit traffic in default zone for http service"
+  ansible.posix.firewalld:
+    service: http
+    permanent: true
+    state: enabled
+    immediate: true
+
+- name: "Send jinja template file"
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+
