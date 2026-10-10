@@ -1,0 +1,6 @@
+---
+- src: https://github.com/devrakaops/ansible-materials/raw/refs/heads/master/role1.tar.gz
+  name: balancer
+
+- src: https://github.com/devrakaops/ansible-materials/raw/refs/heads/master/role2.tar.gz
+  name: phphello
